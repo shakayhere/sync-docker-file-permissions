@@ -63,3 +63,8 @@ services:
       - ./:/app      
     restart: always
 ```
+
+## License
+Copyright (c) 2022 shakayhere
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this code, to deal in any Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
