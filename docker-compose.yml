@@ -1,0 +1,21 @@
+version: '3.3'
+
+networks:
+  web:
+    external: true
+
+services:
+  application:
+    container_name: application
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+      # Passing user and group ID as arguments
+        USER_ID: $USER_ID
+        GROUP_ID: $GROUP_ID
+    networks:
+      - web
+    volumes:
+      - ./:/app      
+    restart: always
